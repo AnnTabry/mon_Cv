@@ -1,0 +1,159 @@
+
+/*----------------------------------------- General*/
+
+#background {
+  background: url(backgrounds/background1.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a
+{
+    color: darkslategray !important;
+    background-color: rgba(255, 255, 255, 0.9);;
+}
+
+h2, .satisfy {
+  font-family: 'Satisfy', cursive;
+}
+
+.marcellus {
+  font-family: 'Marcellus SC', serif;
+}
+
+section {
+  font-size:14px;
+}
+
+.titre {
+  box-sizing: border-box;
+  text-align: center;
+}
+
+section:target {
+    padding-top: 7em;
+    margin-top: -7em;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.hideme
+{
+    opacity:0;
+}
+/*--------------------------------------------Backgrounds'box & sections */
+
+.box {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.bgtranspa {
+   background: rgba(0, 0, 0, 0.3);
+}
+
+.textindent {
+  text-indent: 20px;
+}
+
+.intro {
+  font-size: 18px;
+}
+
+.progress {
+  width : 70%;
+  margin: auto;
+}
+
+.copyright {
+  color: #777;
+}
+
+#titre {
+  color: white;
+  font-family: 'Marcellus SC', serif;
+}
+
+.souligne {
+  border-bottom: 1px solid white;
+  padding-bottom: 20px;
+  border-box : box-sizing;
+  width: 50%;
+  margin: auto;
+}
+
+.devweb {
+  border-bottom: 1px solid black;
+  padding-bottom: 20px;
+  border-box : box-sizing;
+  width: 65%;
+}
+
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+
+/*FOOTER*/
+.textno {
+  text-indent : -30px;
+}
+.gmail {
+  text-indent: -70px;
+}
+.github {
+  text-indent : -15px;
+}
+
+/*--------------------------------------- images et logos*/
+
+#maphoto {
+  height : auto;
+  max-width: 90%;
+
+}
+
+.logo {
+  height : 5vw;
+}
+
+.compweblogos {
+  height : auto;
+  max-width: 25%;
+}
+
+.bigger {
+  height : auto;
+  max-width: 40%;
+}
+
+.form {
+  height : auto;
+  max-width: 45%;
+}
+
+/*carousel*/
+.carousel {
+  min-width: 100%;
+  min-height: 600px;
+}
+
+.bgtranspacarousel {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+
+
