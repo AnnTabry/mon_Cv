@@ -1,12 +1,11 @@
-
 /*----------------------------------------- General*/
 
 #background {
-  background: url(backgrounds/background1.jpg) no-repeat center;
-  background-size: cover;
-  background-attachment: fixed;
-  margin: 0;
-  padding: 0;
+    background: url(backgrounds/background1.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -14,27 +13,29 @@ body {
     position: relative;
 }
 
-.navbar-nav li a:hover, .navbar-nav li.active a
-{
+.navbar-nav li a:hover,
+.navbar-nav li.active a {
     color: darkslategray !important;
-    background-color: rgba(255, 255, 255, 0.9);;
+    background-color: rgba(255, 255, 255, 0.9);
+    ;
 }
 
-h2, .satisfy {
-  font-family: 'Satisfy', cursive;
+h2,
+.satisfy {
+    font-family: 'Satisfy', cursive;
 }
 
 .marcellus {
-  font-family: 'Marcellus SC', serif;
+    font-family: 'Marcellus SC', serif;
 }
 
 section {
-  font-size:14px;
+    font-size: 14px;
 }
 
 .titre {
-  box-sizing: border-box;
-  text-align: center;
+    box-sizing: border-box;
+    text-align: center;
 }
 
 section:target {
@@ -42,118 +43,164 @@ section:target {
     margin-top: -7em;
 }
 
-ul {
-  list-style-type: none;
-}
-
 a:hover {
-  text-decoration: none;
+    text-decoration: none;
 }
 
-.hideme
-{
-    opacity:0;
+.hideme {
+    opacity: 0;
 }
+
+
 /*--------------------------------------------Backgrounds'box & sections */
 
 .box {
-  background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
 .bgtranspa {
-   background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.3);
 }
 
 .textindent {
-  text-indent: 20px;
+    text-indent: 20px;
 }
 
 .intro {
-  font-size: 18px;
+    font-size: 18px;
 }
 
 .progress {
-  width : 70%;
-  margin: auto;
+    width: 70%;
+    margin: auto;
 }
 
 .copyright {
-  color: #777;
+    color: #777;
 }
 
 #titre {
-  color: white;
-  font-family: 'Marcellus SC', serif;
+    color: white;
+    font-family: 'Marcellus SC', serif;
 }
 
 .souligne {
-  border-bottom: 1px solid white;
-  padding-bottom: 20px;
-  border-box : box-sizing;
-  width: 50%;
-  margin: auto;
+    border-bottom: 1px solid white;
+    padding-bottom: 20px;
+    border-box: box-sizing;
+    width: 50%;
+    margin: auto;
 }
 
-.devweb {
-  border-bottom: 1px solid black;
-  padding-bottom: 20px;
-  border-box : box-sizing;
-  width: 65%;
-}
-
-.carousel-indicators li {
-  width: 10px;
-  height: 10px;
-  border-radius: 100%;
-}
 
 /*FOOTER*/
+
 .textno {
-  text-indent : -30px;
+    text-indent: -30px;
 }
+
 .gmail {
-  text-indent: -70px;
+    text-indent: -70px;
 }
+
 .github {
-  text-indent : -15px;
+    text-indent: -15px;
 }
+
 
 /*--------------------------------------- images et logos*/
 
 #maphoto {
-  height : auto;
-  max-width: 90%;
-
+    height: auto;
+    max-width: 90%;
 }
 
 .logo {
-  height : 5vw;
+    height: 5vw;
 }
 
 .compweblogos {
-  height : auto;
-  max-width: 25%;
+    height: auto;
+    max-width: 25%;
+}
+
+.compweblogos:hover {
+    transform: scale(1.5);
+    transition: transform .2s;
 }
 
 .bigger {
-  height : auto;
-  max-width: 40%;
+    height: auto;
+    max-width: 40%;
 }
 
 .form {
-  height : auto;
-  max-width: 45%;
+    height: auto;
+    max-width: 45%;
 }
 
+
 /*carousel*/
+
 .carousel {
-  min-width: 100%;
-  min-height: 600px;
+    min-width: 100%;
+    min-height: 600px;
+}
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
 }
 
 .bgtranspacarousel {
-  background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.card-img-top:hover {
+    filter: saturate(2);
 }
 
 
+/*_____ typewritter ____________*/
 
+.typewriter h2 {
+    width: 50%;
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid grey;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em;
+    /* Adjust as needed */
+    animation: typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+
+/* The typing effect */
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+    to {
+        width: 50%
+    }
+}
+
+
+/* The typewriter cursor effect */
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent
+    }
+    50% {
+        border-color: grey;
+    }
+}
