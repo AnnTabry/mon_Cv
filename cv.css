@@ -9,7 +9,7 @@
     padding: 0;
     -webkit-background-size: cover;
     -moz-background-size: cover;
-       -webkit-background-composite: clear;
+    -webkit-background-composite: clear;
 }
 
 body {
@@ -55,7 +55,6 @@ a:hover {
     opacity: 0;
 }
 
-
 /*--------------------------------------------Backgrounds'box & sections */
 
 .box {
@@ -96,7 +95,6 @@ a:hover {
     margin: auto;
 }
 
-
 /*FOOTER*/
 
 .textno {
@@ -111,7 +109,6 @@ a:hover {
     text-indent: -15px;
 }
 
-
 /*--------------------------------------- images et logos*/
 
 #maphoto {
@@ -123,12 +120,27 @@ a:hover {
     height: 5vw;
 }
 
+#logosimplon {
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#logosimplon:hover {
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
 .compweblogos {
     height: auto;
     max-width: 25%;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
 }
 
 .compweblogos:hover {
+    -webkit-transform: scale(1.5);
     transform: scale(1.5);
     transition: transform .2s;
 }
@@ -142,7 +154,6 @@ a:hover {
     height: auto;
     max-width: 45%;
 }
-
 
 /*carousel*/
 
@@ -161,16 +172,15 @@ a:hover {
 }
 
 .carousel-item {
-    height : 33vw;
+    height: 33vw;
     width: 100%;
 }
 
 .carousel-item img {
     /* object-fit: cover; */
-    height : 100%;
+    height: 100%;
     width: 100%;
 }
-
 
 /*_____ typewritter ____________*/
 
@@ -186,10 +196,8 @@ a:hover {
     /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em;
     /* Adjust as needed */
-    animation: typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
 }
-
 
 /* The typing effect */
 
@@ -201,7 +209,6 @@ a:hover {
         width: 50%
     }
 }
-
 
 /* The typewriter cursor effect */
 
