@@ -4,8 +4,12 @@
     background: url(backgrounds/background1.jpg) no-repeat center;
     background-size: cover;
     background-attachment: fixed;
+    background-clip: padding-box;
     margin: 0;
     padding: 0;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+       -webkit-background-composite: clear;
 }
 
 body {
@@ -87,7 +91,7 @@ a:hover {
 .souligne {
     border-bottom: 1px solid white;
     padding-bottom: 20px;
-    border-box: box-sizing;
+    box-sizing: border-box;
     width: 50%;
     margin: auto;
 }
@@ -142,11 +146,6 @@ a:hover {
 
 /*carousel*/
 
-.carousel {
-    min-width: 100%;
-    min-height: 600px;
-}
-
 .carousel-indicators li {
     width: 10px;
     height: 10px;
@@ -159,6 +158,17 @@ a:hover {
 
 .card-img-top:hover {
     filter: saturate(2);
+}
+
+.carousel-item {
+    height : 33vw;
+    width: 100%;
+}
+
+.carousel-item img {
+    /* object-fit: cover; */
+    height : 100%;
+    width: 100%;
 }
 
 
