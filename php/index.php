@@ -7,7 +7,7 @@ $isSuccess = false;
     //$array = array("firstname" => "", "name" => "", "email" => "", "phone" => "", "message" => "", "firstnameError" => "", "nameError" => "", "emailError" => "", "phoneError" => "", "messageError" => "", "isSuccess" => false);
 $emailTo = "annetabry@gmail.com";
 
-    if ($_SERVER["REQUEST_METHOD"] == "POST") 
+    if (isset($_POST['envoyer']) 
     { 
         //$array["firstname"] = test_input($_POST["firstname"]);
         //$array["name"] = test_input($_POST["name"]);
